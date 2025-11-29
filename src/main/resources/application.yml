@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: simplybyte-springboot
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  # uncomment to serve actuator on a different port
+  # server:
+  #   port: 8081
+
+logging:
+  level:
+    root: INFO
